@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- HTML form for creating a new task -->
+    <div class="todo">
+      <h1>TODO List</h1>
+      <form id="todo-form">
+        <div class="label-margin">
+          <label for="Id">Id:</label>
+        </div>
+        <input type="number" id="Id" name="Id" class="todo-input" placeholder="Enter your Id" required>
+        <br>
+        <div class="label-margin">
+          <label for="fullname">Fullname:</label>
+        </div>
+        <input type="text" id="fullname" name="fullname" class="todo-input" placeholder="Enter your Name" required>
+        <br>
+        <div class="label-margin">
+          <label for="email">Email:</label>
+        </div>
+        <input type="email" id="email" name="email" class="todo-input" placeholder="Enter your Email" required>
+        <br>
+        <div class="label-margin">
+          <label for="email">Hobbies:</label>
+        </div>
+        <input type="text" id="hobbies" name="hobbies" class="todo-input" placeholder="Enter your Hobbies" required>
+        <br>
+        <button type="submit" class="btn-add">Add Todo</button>
+      </form>
+    </div>
+    <div class="todolist">
+      <h3>List of Works Todo:</h3>
+      <table id="todo-table" class="table-todo">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Fullname</th>
+            <th>Email</th>
+            <th>Hobbies</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- todo items will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
